@@ -1,0 +1,20 @@
+@layout('template')
+
+@section('content')
+  <section class="profile">
+    {{user.username}}
+  </section>
+
+  <section class="products">
+
+    @each(i in list)
+      <div class="card">
+        <span>{{i.name}}</span>
+        <div class="photo">
+          <img src="/{{i.url}}" alt="{{i.name}}-foto">
+        </div>
+        <span>{{i.price}}</span>
+      </div>
+    @endeach
+  </section>
+@endsection

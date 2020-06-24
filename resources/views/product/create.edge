@@ -1,0 +1,25 @@
+@layout('template')
+
+@section('content')
+  <main>
+    <form class="auth-form" action="/produto/novo" method="post" enctype="multipart/form-data">
+      {{ csrfField() }}
+
+      <label for="">Nome:</label>
+      <input type="text" name="name" value="">
+
+      <label for="">Preço</label>
+      <input type="text" name="price" value="">
+
+      <label for="">Detalhes:</label>
+      <textarea name="details" rows="8" >
+
+      </textarea>
+      <label for="">Imagem:</label>
+      <input type="file" name="photo">
+
+      <input type="submit" name="" class="auth-submit" value="Salvar">
+    </form>
+  </main>
+
+@endsection

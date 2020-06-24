@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cardapiodotcom | Home</title>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    {{ style('style') }}
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          CardapioDotCom
+        </a>
+      </div>
+      <div class="search">
+
+      </div>
+      <nav>
+        @if(auth.user)
+          <a href="/perfil" class="username">
+            Perfil
+          </a>
+          <form class="logout" action="/logout" method="post">
+            {{ csrfField() }}
+            <input type="submit" name="" value="Logout">
+          </form>
+        @else
+          <a href="/registrar" class="register">Criar conta</a>
+          <a href="/login" class="login">Entrar</a>
+        @endif
+      </nav>
+
+    </header>
+    <div class="ghost">
+
+    </div>
+      @!section('content')
+  </body>
+</html>

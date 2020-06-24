@@ -1,0 +1,21 @@
+
+@layout('template')
+
+@section('content')
+  <main>
+    <form class="auth-form" action="/registrar" method="post">
+      {{ csrfField() }}
+      <label for="">Nome de Usuario:</label>
+      <input type="text" name="username" value="">
+      <label for="">Email:</label>
+      <input type="email" name="email" value="">
+      <label for="">Senha:</label>
+      <input type="password" name="password" value="">
+      <label for="">Confirme sua senha:</label>
+      <input type="password" name="confirm" value="">
+      <input type="submit" name="" class="auth-submit" value="Enviar">
+    </form>
+  </main>
+
+
+@endsection

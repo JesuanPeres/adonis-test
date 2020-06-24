@@ -1,0 +1,17 @@
+@layout('template')
+
+@section('content')
+  <main>
+    <form class="auth-form" action="/login" method="post">
+      {{ csrfField() }}
+
+      <label for="">Email:</label>
+      <input type="email" name="email" value="">
+      <label for="">Senha:</label>
+      <input type="password" name="password" value="">
+
+      <input type="submit" name="" class="auth-submit" value="Entrar">
+    </form>
+  </main>
+
+@endsection
