@@ -1,20 +1,30 @@
 
 @layout('template')
 
+@section('style')
+  {{style('css/home')}}
+@endsection
+
 @section('content')
-  <main>
-    <form class="auth-form" action="/registrar" method="post">
-      {{ csrfField() }}
-      <label for="">Nome de Usuario:</label>
-      <input type="text" name="username" value="">
-      <label for="">Email:</label>
-      <input type="email" name="email" value="">
-      <label for="">Senha:</label>
-      <input type="password" name="password" value="">
-      <label for="">Confirme sua senha:</label>
-      <input type="password" name="confirm" value="">
-      <input type="submit" name="" class="auth-submit" value="Enviar">
-    </form>
+  
+
+  <main class="container">
+    <div class="row p-1">
+
+      <form action="/login" method="post" class="card col-md-6 col-sm-10 mx-auto mt-5 p-4 yellow-font">
+        {{ csrfField() }}
+        <h2>Criar conta</h2>
+        <label for="">Nome de Usuario:</label>
+        <input type="text" name="username" value="" class="form-input" required>
+        <label for="" class="h5">Email:</label>
+        <input type="email" name="email"  value="" class="form-input" required>
+        <label for="" class="h5">Senha:</label>
+        <input type="password" name="password"  value="" class="form-input" required>
+        <label for="">Confirme sua senha:</label>
+        <input type="password" name="confirm" value="" class="form-input" required>
+        <input type="submit" name="" class="yellow-button my-3 h5" value="Entrar">
+      </form>
+    </div>
   </main>
 
 

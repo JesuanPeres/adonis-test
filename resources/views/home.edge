@@ -1,9 +1,54 @@
 @layout('template')
 
+@section('style')
+  {{style('css/home')}}
+@endsection
+
 @section('content')
-  <main>
-    <span class="presentation">
-      Bemvindo ao CardapioDotCom
-    </span>
+
+  <main class="container">
+    <div class="row p-1">
+
+      <div class="presentation mx-auto col-md-10  mt-5 card yellow-font">
+        <h1 class="h2 text-center">Bemvindo ao CardapioDotCom</h1>
+        <p class=" text-justify blue-font">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur voluptates blanditiis numquam possimus. Amet repellendus ducimus officia, dolores nam consequuntur doloribus sequi esse quisquam odio corporis fugit. Pariatur, magnam?
+        </p>
+        {{--  <h1>CardapioDotCom</h1>  --}}
+      </div>
+    </div>
+    <div class="row p-1">
+      <div class="card col-md-10 offset-md-1 yellow-font">
+        <form class="form-inline d-flex justify-content-center md-form form-sm mt-2">
+          <label for="">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </label>
+          <input type="text" name="q" id="" class="search ml-3" placeholder="Pesquisar">
+    
+        </form>
+      </div>
+    </div>
+    <div class="row p-1 justify-content-center">
+      <div class="card col-md-5 mx-0 mr-md-1">
+        <div class="card-body yellow-font">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolor maiores, nulla quia non similique dolores nisi amet rem ratione sunt modi culpa neque, unde perferendis, nobis repudiandae voluptatum assumenda!
+        </div>
+        <div class="card-footer">
+          <a href="#" class="yellow-button-outline">Principais Restaurantes</a>
+        </div>
+      </div>
+      <div class="card col-md-5 mx-0 ml-md-1 my-md-0 mt-2">
+        <div class="card-body yellow-font">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facere aliquam facilis omnis veritatis est possimus, similique corporis! Nisi doloremque vel natus corporis iste itaque similique soluta qui laborum dolor!
+        </div>
+        <div class="card-footer">
+          <a href="{{route('register-form')}}" class="yellow-button">Criar Conta</a>
+        </div>
+      </div>
+    </div>
+    <div class="row p-1">
+    </div>
+    
+    
   </main>
 @endsection

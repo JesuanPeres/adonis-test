@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+.ghost{
+    height: 30px;
+}
+
+.white-button{
+    min-width: 100px;
+    height: 40px;
+    border: inset 2px #000;
+    border-style: solid;
+    color: #000;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.white-button:hover{
+    background: #000;
+    color: #D99B29;
+    text-decoration: none;
+}
+
+.yellow-button{
+    min-width: 100px;
+    height: 40px;
+    background: #D99B29;
+    border: none; /* inset 1px #000; */
+    /* border-style: solid; */
+    color: #000;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.yellow-button:hover{
+    background: #000;
+    color: #D99B29;
+    text-decoration: none;
+}
+
+
+.yellow-button-outline{  
+    min-width: 100px;
+    height: 40px;
+    border: inset 2px #D99B29;
+    border-style: solid;
+    color: #D99B29;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.yellow-button-outline:hover{
+    background:#D99B29;
+    color: #000;
+    text-decoration: none;
+}
+  
+.black-button{
+    min-width: 100px;
+    height: 40px;
+    background: #000;
+    color: #D99B29;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    font-size: 20px;
+}
+
+.black-button:hover{
+    border: inset 2px #000;
+    border-style: solid;
+    color: #000;
+    background: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+
+
+
+.hamburger{
+    border: solid 2px #000;
+    border-radius: 0;
+    color: #000;
+    font-size: 20px;
+    width: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.hamburger:hover{
+    color: #000;
+}
+
+
+.btn{
+    border-radius: 0;
+}
+
+.logout{
+    width: 100%;
+}
+
+.form-input{
+    border: solid 2px #D99B29;;
+    height: 40px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #fff;
+}
+
+header{
+    background: #D99B29;
+    /* min-height: 70px; */
+    display: grid;
+}
+
+body{
+    background-color: #ccc;    
+}
+
+
+
+.card{
+    background: rgba(0, 0, 0, 0.75);
+    border: none;
+}
+    
+
+.yellow-font{
+    color: #D99B29;
+}
+
+.black-font{
+    color: #000;
+}
+
+
+h1{
+    display: inline;
+}
+
+.search, .search:focus{
+    width: 75%;
+    border: none;
+    border-bottom: solid 2px #D99B29;;
+    height: 40px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #fff;
+}
+
+input:focus{
+    outline: none;
+}

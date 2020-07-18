@@ -18,19 +18,19 @@ const Route = use('Route')
 
 Route.on('/adonisjs').render('adonisjs')
 
-Route.on('/').render('home');
+Route.on('/').render('home').as('home');
 
-Route.get('/registrar', 'AuthController.register').middleware(['guest'])
+Route.get('/registrar', 'AuthController.register').as('register-form').middleware(['guest'])
 
-Route.post('/registrar', 'AuthController.saveUser').middleware(['guest'])
+Route.post('/registrar', 'AuthController.saveUser').as('register').middleware(['guest'])
 
-Route.get('/login', 'AuthController.loginForm').middleware(['guest'])
+Route.get('/login', 'AuthController.loginForm').as('login-form').middleware(['guest'])
 
-Route.post('/login', 'AuthController.login').middleware(['guest'])
+Route.post('/login', 'AuthController.login').as('login').middleware(['guest'])
 
-Route.get('/perfil', 'AuthController.acount').middleware(['auth'])
+Route.get('/perfil', 'AuthController.acount').as('profile').middleware(['auth'])
 
-Route.post('/logout', 'AuthController.logout').middleware(['auth'])
+Route.post('/logout', 'AuthController.logout').as('logout').middleware(['auth'])
 
 
 

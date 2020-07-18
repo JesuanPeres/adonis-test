@@ -1,0 +1,18 @@
+body{
+    background-image: url('../img/back3.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 56px;
+}
+
+
+@media screen and (max-width: 900px){
+    body{
+        background-image: url('../img/back3.jpg');
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        background-position: 0 56px;
+        background-color: #2967D9;
+        background-attachment: fixed;
+    }
+}

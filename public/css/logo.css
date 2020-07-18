@@ -1,0 +1,25 @@
+.navbar-brand, .navbar-brand:hover{
+    color: rgba(255, 255, 255, 0);
+    width: 100px;
+    height: 40px;
+    border: solid 2px #000;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100%;
+    grid-gap: 5%;
+}
+
+.logo-c, .logo-c:hover{
+    color: rgba(173, 17, 17, 0);
+    border-top: solid 5px #000;
+    border-left: solid 5px #000;
+    border-bottom: solid 5px #000;
+}
+
+.logo-a, .logo-a:hover{
+    color: rgba(255, 255, 255, 0);
+    border-top: solid 5px #000;
+    border-left: solid 5px #000;
+    border-right: solid 5px #000;
+}
